@@ -7,13 +7,16 @@ Este proyecto automatiza el formulario de login de SauceDemo usando WebDriverIO.
 
 ## Casos de prueba
 
-1. UC-1: Campos vacíos → "Username is required"
-2. UC-2: Falta contraseña → "Password is required"
-3. UC-3: Login válido → título "Swag Labs"
+1. UC-1: Campos vacíos → Resultado: "Username is required"
+2. UC-2: Falta contraseña → Resultado: "Password is required"
+3. UC-3: Login válido → Resultado: título "Swag Labs"
 
-## Cómo correr los tests
+## Browsers
+1- Chrome
+2- Firefox
+3- Edge
 
-Instalá dependencias:
+### Aclaración
 
-```bash
-npm install
+WebDriverIO está configurado para testear primero con Cucumber.
+Para hacerlo en Mocha, cambiar la configuración en wdio.conf.js en la sección de specs.
