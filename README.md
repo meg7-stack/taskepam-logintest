@@ -1,22 +1,20 @@
-﻿# SauceDemo Login Tests (Mocha + Cucumber)
+﻿SauceDemo Login Tests (Mocha + Cucumber)
 
-Este proyecto automatiza el formulario de login de SauceDemo usando WebDriverIO. Se incluyen dos formas de testear:
+This project automates the SauceDemo login form using WebDriverIO. It includes two ways to test:
 
-- Mocha (test tradicional con JavaScript)
-- Cucumber (test con lenguaje Gherkin)
+- Mocha (traditional test with JavaScript)
+- Cucumber (test written in Gherkin language)
 
-## Casos de prueba
+Test cases:
+UC-1: Empty credentials → Result: "Username is required"
+UC-2: Missing password → Result: "Password is required"
+UC-3: Valid credentials → Result: title "Swag Labs"
 
-1. UC-1: Campos vacíos → Resultado: "Username is required"
-2. UC-2: Falta contraseña → Resultado: "Password is required"
-3. UC-3: Login válido → Resultado: título "Swag Labs"
-
-## Browsers
+Browsers:
 1- Chrome
 2- Firefox
 3- Edge
 
-### Aclaración
-
-WebDriverIO está configurado para testear primero con Cucumber.
-Para hacerlo en Mocha, cambiar la configuración en wdio.conf.js en la sección de specs.
+Note:
+WebDriverIO is configured to test first with Cucumber.
+To run with Mocha, change the configuration in wdio.conf.js in the specs section, framework, etc.

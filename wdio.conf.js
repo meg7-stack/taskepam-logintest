@@ -22,6 +22,7 @@ exports.config = {
     //
     specs: [
         './src/features/**/*.feature'
+         //'./src/test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -51,7 +52,7 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'chrome'
-    } ,{
+    },  {
         browserName: 'firefox'
        }, {
        browserName: 'edge'

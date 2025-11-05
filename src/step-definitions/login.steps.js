@@ -11,7 +11,7 @@ When('I type {string} in username and {string} in password', async (username, pa
 });
 
 //
-// Método reutilizable para limpiar inputs controlados por React
+// Reusable method to clear React-controlled inputs
 //
 async function clearInputReact(selector) {
     return await browser.execute((sel) => {
